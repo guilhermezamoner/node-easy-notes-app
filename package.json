@@ -1,0 +1,17 @@
+{
+  "name": "node-easy-notes-app",
+  "version": "1.0.0",
+  "description": "tutorial  www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Express",
+    "RestApi",
+    "MongoDB",
+    "Moongose"
+  ],
+  "author": "Guilherme Z",
+  "license": "ISC"
+}
