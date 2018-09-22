@@ -5,20 +5,20 @@ const mongoose = require('mongoose');
 
 const app = express();
 
+app.use(bodyParser.urlencoded({extended : true}));
+
+app.use(bodyParser.json())
+
 mongoose.Promise = global.Promise;
 
 mongoose.connect(dbConfig.url, {
-  urlParser: true
+  useNewUrlParser: true
 }).then(()=> {
   console.log("Successfuly connected!");
 }).catch(err => {
   console.log("error!");
   process.exit();
 });
-
-app.use(bodyParser.urlencoded({extended : true}));
-
-app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
   res.json({"message": "Hello world"});

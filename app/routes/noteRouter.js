@@ -11,7 +11,7 @@ module.exports = (app) => {
   app.get('/notes/:id', notes.findOne);
 
   // Update a note with id
-  app.get('/notes/:id', notes.update);
+  app.put('/notes/:id', notes.update);
 
   //Delete a note with id
   app.delete('/notes/:id', notes.delete);
